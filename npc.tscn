@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bdxeqshg018xl"]
+
+[ext_resource type="Texture2D" uid="uid://8bcn8e3evw8r" path="res://icon.svg" id="1_ideak"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xxcha"]
+size = Vector2(18.75, 18.34375)
+
+[node name="NPC" type="StaticBody2D" unique_id=400648529]
+collision_layer = 2
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1665691751]
+position = Vector2(0.25000024, 0.25000024)
+scale = Vector2(0.15234375, 0.15234375)
+texture = ExtResource("1_ideak")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1011905280]
+position = Vector2(0.375, 0.171875)
+shape = SubResource("RectangleShape2D_xxcha")
+
+[node name="Dots" type="Node2D" parent="." unique_id=2037265192]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Dots" unique_id=243858449]
+offset_left = -8.0
+offset_top = -22.999998
+offset_right = 32.0
+offset_bottom = 17.000002
+scale = Vector2(0.08714433, 0.08714433)
+
+[node name="ColorRect2" type="ColorRect" parent="Dots" unique_id=1614808158]
+offset_left = -1.9999988
+offset_top = -23.0
+offset_right = 38.0
+offset_bottom = 17.0
+scale = Vector2(0.08714433, 0.08714433)
+
+[node name="ColorRect3" type="ColorRect" parent="Dots" unique_id=1858484617]
+offset_left = 4.0
+offset_top = -23.0
+offset_right = 44.0
+offset_bottom = 17.0
+scale = Vector2(0.08714433, 0.08714433)

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cuhnmm61ag61n"]
+
+[ext_resource type="PackedScene" uid="uid://bqp21mpqbkxmw" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://dcsd8l64gm3ri" path="res://godot-teal.png" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bdxeqshg018xl" path="res://npc.tscn" id="3_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=1746753893]
+
+[node name="GodotTeal" type="Sprite2D" parent="." unique_id=25077483]
+position = Vector2(-528, -26)
+scale = Vector2(0.47738114, 0.5182585)
+texture = ExtResource("2_0xm2m")
+
+[node name="Player" parent="." unique_id=97196896 instance=ExtResource("1_ig7tw")]
+
+[node name="NPC" parent="." unique_id=1667855334 instance=ExtResource("3_h2yge")]
+position = Vector2(335, 19)
+scale = Vector2(4.816335, 4.816335)
